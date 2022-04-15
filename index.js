@@ -1,14 +1,10 @@
-//═══════[© 2022 Zim Bot Inc.]════════\\
+//                     zimbot.inc.pressents 
+//                     2022 production
+//                     Thanks to dikArdnt
 
-//~you can re-upload but tag my channel
-//or put my channel link in the description.
-//~you can recode or copy the codes but give
-//credit.
-//https://wa.me/+27634090203 
-//Drips Memes
+                                                                                                               //drips
 
-//═══════[modules]════════\\
-require('./config')
+require('./settings')
 const { default: ZimBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 const pino = require('pino')
@@ -70,21 +66,21 @@ async function startZimBotInc() {
             let metadata = await ZimBotInc.groupMetadata(anu.id)
             let participants = anu.participants
             for (let num of participants) {
-//═══════[get profile pic]════════\\
+//group update
                 try {
                     ppuser = await ZimBotInc.profilePictureUrl(num, 'image')
                 } catch {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
-//═══════[get group dp]════════\\
+//console.log(pea)
+//Get Group Profile picture		    
                 try {
                     ppgroup = await ZimBotInc.profilePictureUrl(anu.id, 'image')
                 } catch {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                 
-//═══════[welcome]════════\\
 let nama = await ZimBotInc.getName(num)
 memb = metadata.participants.length
 
@@ -108,7 +104,7 @@ dont come back here ` })
         }
     })
 	
-//═══════[setting]════════\\
+//settings
     ZimBotInc.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
