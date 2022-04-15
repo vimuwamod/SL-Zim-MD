@@ -1,3 +1,11 @@
+//                     zimbot.inc.pressents 
+//                     2022 production
+//                     Thanks to dikArdnt
+
+                                                                                                               //drips
+
+
+
 export declare class TicTacToe {
     /* X PlayerName */
     playerX: string;
