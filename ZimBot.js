@@ -1,14 +1,9 @@
-//༼༺⋋[© 2022 Zim Bot Inc.]⋌༻༽\\
+//                     zimbot.inc.pressents 
+//                     2022 production
+//                     Thanks to dikArdnt
+                                                                                        //drips
 
-//~you can re-upload recode but give my credit
-//https://github.com/zim-bot
-//~you can recode or copy the codes but give
-//credit.
-//~+27634090203
-//֎֎֎֎֎֎֎֎֎֎֎֎֎֎֎֎֎֎֎֎
-
-//https.wa.me/27634090203[modules]https.wa.me/27634090203\\
-require('./config')
+require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const util = require('util')
@@ -27,13 +22,101 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 let { addLevelingId, addLevelingLevel, addLevelingXp, getLevelingId, getLevelingLevel, getLevelingXp } = require("./lib/lvlfunction")
 const speedofbot = require("performance-now")
 
-//https.wa.me/27634090203[thumb]https.wa.me/27634090203\\
+//function rpg
+   const { 
+     addInventoriDarah, 
+      cekDuluJoinAdaApaKagaDiJson, 
+      addDarah, 
+      kurangDarah, 
+     getDarah 
+   }  = require('./storage/user/darah.js')
+   const { 
+     cekInventoryAdaAtauGak, 
+      addInventori,  
+       addBesi, 
+       addEmas, 
+       addEmerald,
+       addUmpan,
+       addPotion,
+       kurangBesi, 
+       kurangEmas, 
+       kurangEmerald, 
+       kurangUmpan,
+       kurangPotion,
+       getBesi, 
+      getEmas, 
+     getEmerald,
+     getUmpan,
+    getPotion
+   } = require('./storage/user/alat_tukar.js')
+   const { 
+    addInventoriMonay, 
+    cekDuluJoinAdaApaKagaMonaynyaDiJson, 
+    addMonay, 
+    kurangMonay, 
+   getMonay 
+   } = require('./storage/user/monay.js')
+   const { 
+    addInventoriLimit, 
+    cekDuluJoinAdaApaKagaLimitnyaDiJson, 
+    addLimit, 
+    kurangLimit, 
+    getLimit 
+   } = require('./storage/user/limit.js')
+   const { 
+    cekDuluHasilBuruanNya, 
+     addInventoriBuruan, 
+     addIkan,
+      addAyam, 
+      addKelinci, 
+      addDomba, 
+      addSapi,
+      addGajah,
+      kurangIkan,
+      kurangAyam, 
+      kurangKelinci, 
+      kurangDomba, 
+      kurangSapi,
+      kurangGajah,
+      getIkan,
+      getAyam, 
+      getKelinci, 
+      getDomba,
+     getSapi,
+    getGajah
+   } = require('./storage/user/buruan.js')
+   let DarahAwal =  global.rpg.darahawal
+   const isDarah = cekDuluJoinAdaApaKagaDiJson(m.sender)   
+   const isCekDarah = getDarah(m.sender)
+   const isUmpan = getUmpan(m.sender)
+   const isPotion = getPotion(m.sender)
+   const isIkan = getIkan(m.sender)
+   const isAyam = getAyam(m.sender)
+   const isKelinci = getKelinci(m.sender)
+   const isDomba = getDomba(m.sender)
+   const isSapi = getSapi(m.sender)
+   const isGajah = getGajah(m.sender)
+   const isMonay = getMonay(m.sender)
+   const isLimit = getLimit(m.sender)
+   const isBesi = getBesi(m.sender)
+   const isEmas = getEmas(m.sender)
+   const isEmerald = getEmerald(m.sender)
+   const isInventory = cekInventoryAdaAtauGak(m.sender)
+   const isInventoriBuruan = cekDuluHasilBuruanNya(m.sender)
+   const isInventoryLimit = cekDuluJoinAdaApaKagaLimitnyaDiJson(m.sender)
+   const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
+   const ikan = ['🐟','🐠','🐡']   
+
+// Database Rpg
+ let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
+ let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
+ let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
+
 let drips = fs.readFileSync('./Zimbot/drips.jpg')
 
-//https.wa.me/27634090203[database]https.wa.me/27634090203\\
 const antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 
-//https.wa.me/27634090203[database reader]https.wa.me/27634090203\\
+//read database
 global.db = JSON.parse(fs.readFileSync('./src/database.json'))
 if (global.db) global.db = {
     sticker: {},
@@ -73,7 +156,7 @@ module.exports = ZimBotInc = async (ZimBotInc, m, chatUpdate, store) => {
         const mime = (quoted.msg || quoted).mimetype || ''
 	    const isMedia = /image|video|sticker|audio/.test(mime)
 	
-//https.wa.me/27634090203[gc]https.wa.me/27634090203\\
+//Group
         const groupMetadata = m.isGroup ? await ZimBotInc.groupMetadata(m.chat).catch(e => {}) : ''
         const groupName = m.isGroup ? groupMetadata.subject : ''
         const isAntiLink = m.isGroup ? antilink.includes(m.chat) : false
@@ -84,7 +167,7 @@ module.exports = ZimBotInc = async (ZimBotInc, m, chatUpdate, store) => {
     	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
 	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
 	
-//════════[runtime]═════════//
+//speed.py
 const runtime = function (seconds) {
 seconds = Number(seconds);
 var d = Math.floor(seconds / (3600 * 24));
@@ -97,8 +180,6 @@ var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
 var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
 return dDisplay + hDisplay + mDisplay + sDisplay;
 }
-	
-//https.wa.me/27634090203[target]https.wa.me/27634090203\\
 	const reply = (teks) => {
             ZimBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Join Zim Bot Support GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Zimbot/drips.jpg`),"sourceUrl": "https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A"}}}, { quoted: m})
         }
@@ -134,41 +215,19 @@ try {
         }
 	    
 
-//https.wa.me/27634090203[public/self]https.wa.me/27634090203\\
+//self && public
         if (!ZimBotInc.public) {
             if (!m.key.fromMe) return
         }
 
-//[push msg to console & autoread]\\
+//Push Message To Console && Auto Read
         if (m.message) {
             ZimBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
             console.log(chalk.black(chalk.bgWhite('[ZIM BOT INC]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> In'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
         }
 	
-//https.wa.me/27634090203[level(incomplete, still in devment)]https.wa.me/27634090203\\
-const levelRole = getLevelingLevel(m.sender)
-	  var role = 'bronz'
-	  if (levelRole <= 3) {
-	role = 'Copper'
-	  } else if (levelRole <= 5) {
-	role = 'Iron'
-	  } else if (levelRole <= 7) {
-	role = 'Silver'
-	  } else if (levelRole <= 10) {
-	role = 'Gold'
-	  } else if (levelRole <= 12) {
-	role = 'Platinum'
-	  } else if (levelRole <= 15) {
-	role = 'Mithril'
-	  } else if (levelRole <= 18) {
-	role = 'Orichalcum'
-	  } else if (levelRole <= 25) {
-	role = 'Adamantite'
-	  } else if (levelRole <= 45) {
-	role = 'Good In Game'
-	  }
 	
-//https.wa.me/27634090203[Antilink]https.wa.me/27634090203\\
+//Antilink action remove
 	if (isAntiLink) 
 if (budy.includes('https://chat.whatsapp.com/')) {
                if (!m.key.fromMe) {
@@ -190,16 +249,16 @@ if (budy.includes('https://chat.whatsapp.com/')) {
         ZimBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
-//https.wa.me/27634090203[mute chat]https.wa.me/27634090203\\
+//mute chat
       if (db.chats[m.chat].mute && !isAdmins && !isCreator) {
       return
       }
-//https.wa.me/27634090203[write database every 1min]https.wa.me/27634090203\\
+//write database every 1min
 	setInterval(() => {
             fs.writeFileSync('./src/database.json', JSON.stringify(global.db, null, 2))
         }, 60 * 1000)
 
-//https.wa.me/27634090203[reset limit every 12hrs]https.wa.me/27634090203\\
+//reset limit every 12hrs
         let cron = require('node-cron')
         cron.schedule('00 12 * * *', () => {
             let user = Object.keys(global.db.users)
@@ -211,7 +270,7 @@ if (budy.includes('https://chat.whatsapp.com/')) {
             timezone: "Africa/Harare"
         })
 	    
-//https.wa.me/27634090203[respond cmd with media]https.wa.me/27634090203\\
+//Respon Cmd with media
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.sticker)) {
         let hash = global.db.sticker[m.msg.fileSha256.toString('base64')]
         let { text, mentionedJid } = hash
@@ -327,7 +386,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else reply('*Wrong Answer!*')
         }
         
-//https.wa.me/27634090203[tictactoe]https.wa.me/27634090203\\
+//tictactoe
 	    this.game = this.game ? this.game : {}
 	    let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
 	    if (room) {
@@ -392,7 +451,7 @@ Type *give up* to surrender and admit defeat`
 	    }
 	    }
 
-//https.wa.me/27634090203[suit]https.wa.me/27634090203\\
+//suit VP
 	    this.suit = this.suit ? this.suit : {}
 	    let roof = Object.values(this.suit).find(roof => roof.id && roof.status && [roof.p, roof.p2].includes(m.sender))
 	    if (roof) {
@@ -1497,7 +1556,7 @@ break
         n = result
         images = n[Math.floor(Math.random() * n.length)].url
         let buttons = [
-                    {buttonId: `gimage ${text}`, buttonText: {displayText: 'Next Image'}, type: 1}
+                    {buttonId: `gimage ${text}`, buttonText: {displayText: 'NEXT IMG'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: images },
@@ -2372,11 +2431,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
                     	ZimBotInc.sendMessage(`27634090203@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
-reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
+reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid`)
                     }
                     break
 case 'speedtest': case 'testspeed': {
-            m.reply('Testing Speed...')
+            m.reply('Testing Zimbot Speed...')
             let cp = require('child_process')
             let { promisify } = require('util')
             let exec = promisify(cp.exec).bind(cp)
@@ -2462,7 +2521,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `𝗛𝗶 😌 ${pushname}
  𝘎𝘙𝘌𝘌𝘛𝘐𝘕𝘎𝘚 𝘞𝘈𝘎𝘞𝘈𝘈𝘕💪
  
-╭──────[𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨]
+╭──────[ 𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨 ]
 │💎𝗦𝗣𝗘𝗘𝗗 : ${latensie.toFixed(4)} 𝗦𝗘𝗖𝗢𝗡𝗗𝗦
 │
 │💎𝗥𝗨𝗡𝗧𝗜𝗠𝗘 : ${runtime(process.uptime())}
@@ -3225,7 +3284,7 @@ break
   case 'allmenu': {
    	anu = `
    ╭───────────╮
-   │𝗭𝗜𝗠𝗕𝗢𝗧-𝗠𝗘𝗡𝗨 ▎
+   │𝗭𝗜𝗠𝗕𝗢𝗧-𝗠𝗘𝗡𝗨  ▎
    ╰───────────╯
   ╭──❰ 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 ❱
   │🔵 ${prefix}grouplink
@@ -3529,7 +3588,7 @@ break
         
 
     } catch (err) {
-        m.reply(util.format(err))
+        m.reply(util.format(err))     //drips zim bot inc
     }
 }
 
