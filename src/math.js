@@ -1,13 +1,9 @@
-//༼༺⋋[© 2022 𝗭𝗶𝗺 Bot Inc.]⋌༻༽\\
+//                     zimbot.inc.pressents 
+//                     2022 production
+//                     Thanks to dikArdnt
 
-//~you can re-upload but tag my channel
-//or put my channel link in the description.
-//~you can recode or copy the codes but give
-//credit.
-//~+27634090203
-//֍֍֍֍֍֍֍֍֍֍֍֍֍֍֍֍࿙࿙࿙
+                                                                                                               //drips
 
-//═══════[codes]════════\\
 let modes = {
     noob: [-3, 3,-3, 3, '+-', 15000, 10],
     easy: [-10, 10, -10, 10, '*/+-', 20000, 40],
