@@ -41,7 +41,15 @@ global.mess = {
 }
 global.limitawal = {
     premium: "Infinity", //premium user limit
-    free: 100000 //free user limit
+    free: 10 //free user limit
+}
+   global.rpg = {
+   darahawal: 100,
+   besiawal: 15,
+   goldawal: 10,
+   emeraldawal: 5,
+   umpanawal: 5,
+   potionawal: 1	
 }
 global.thumb = fs.readFileSync('./Zimbot/drips.jpg')
 
