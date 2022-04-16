@@ -2423,7 +2423,7 @@
                                                                                                     break
                                                                                                     case 'owner': case 'creator': {
                                                                                                     ZimBotInc.sendContact(m.chat, global.pemilik, m)
-                                                                                                   const devsound = fs.readFileSync('./Zimbot/botdev.mp3') //u can change the music in Zimbot folder
+                                                                                                   const devsound = fs.readFileSync('./drips.mp3') 
                                                                                                    ZimBotInc.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
                                                                                                     }
                                                                                                     break
@@ -2572,8 +2572,8 @@ hydratedButtons: [{
                                                                                         case 'command':{
                                                                                         let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                         listMessage :{
-                                                                                                            title: `WAGWAAN ${pushname}`,
-                                                                                                            description: `WhatsApp bot with rich cool features`,
+                                                                                                            title: `Hi My lovely friend ${pushname}`,
+                                                                                                            description: `*WhatsApp bot with rich cool features*`,
                                                                                                             buttonText: "ZIMBOT MENU",
                                                                                                             footerText: "ZIM BOT INC 2022",
                                                                                                             listType: "SINGLE_SELECT",
@@ -2582,7 +2582,7 @@ hydratedButtons: [{
                                                                                                                         "rows": [
                                                                                                                             {
                                                                                                                                 "title": "GROUP CMD",
-                                                                                                                                "description": "Zim-Bot Group Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}grupmenu`
                                                                                                                             }
                                                                                                                         ]
@@ -2592,52 +2592,52 @@ hydratedButtons: [{
                                                                                                                         "rows": [
                                                                                                                             {
                                                                                                                                 "title": "MENU CMD",
-                                                                                                                                "description": "Zim-Bot All The Features!",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}allmenu`
                                                                                                                             },
                                                                                                                             {
                                                                                                                                 "title": "DOWNLOAD CMD",
-                                                                                                                                "description": "Zim-Bot Download Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}downloadmenu`
                                                                                                                             },
                                                                                                                             {
                                                                                                                                 "title": "SEARCH CMD",
-                                                                                                                                "description": "Zim-Bot Searching Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}searchmenu`
                                                                                                                             },
                                                                                                                                 {
                                                                                                                                     "title": "IMAGE CMD",
-                                                                                                                                "description": "Zim-bot Image Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}imagemenu`
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                     "title": "FUN CMD",
-                                                                                                                                "description": "Zim-Bot Fun Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}funmenu`
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                     "title": "CONVERT CMD",
-                                                                                                                                "description": "Zim-Bot Convert Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}convertmenu`
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                     "title": "RANDOM ANIME CMD",
-                                                                                                                                "description": "Zim-Bot Ramdom Anime Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}ranimemenu`
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                 "title": "MISCELLANEOUS CMD",
-                                                                                                                                "description": "Zim-Bot Miscellaneous Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}nocategorymenu`
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                     "title": "DATABASE CMD",
-                                                                                                                                "description": "Zim-Bot Database Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}databasemenu`
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                     "title": "VOICE CMD",
-                                                                                                                                "description": "Zim-Bot Changing Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}voicemenu`
                                                                                                                                 }
                                                                                                                         ]
@@ -2647,7 +2647,7 @@ hydratedButtons: [{
                                                                                                                         "rows": [
                                                                                                                             {
                                                                                                                                 "title": "ANONYMOUS CMD",
-                                                                                                                                "description": "Zim-Bot Anonymous Chat Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}anonymouschatmenu`
                                                                                                                             }
                                                                                                                         ]
@@ -2657,7 +2657,7 @@ hydratedButtons: [{
                                                                                                                         "rows": [
                                                                                                                             {
                                                                                                                                 "title": "SYSTEM CMD",
-                                                                                                                                "description": "Zim-Bot Group System Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}sistemmenu`
                                                                                                                             }
                                                                                                                         ]
@@ -2667,7 +2667,7 @@ hydratedButtons: [{
                                                                                                                         "rows": [
                                                                                                                             {
                                                                                                                                 "title": "OWNER CMD",
-                                                                                                                                "description": "Zim-Bot Owner Features",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}ownermenu`
                                                                                                                             }
                                                                                                                         ]
@@ -2677,7 +2677,7 @@ hydratedButtons: [{
                                                                                                                         "rows": [
                                                                                                                             {
                                                                                                                                 "title": "ZIM BOT CREDITS",
-                                                                                                                                "description": "Zim-Bot Credits !!",
+                                                                                                                                
                                                                                                                                 "rowId": `${prefix}tqtt`
                                                                                                                             }
                                                                                                                         ]
