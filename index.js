@@ -1,14 +1,9 @@
-//═══════[© 2022 Zim Bot Inc.]════════\\
+//                     zimbot.inc.pressents 
+//                     2022 production
+//                     Thanks to dikArdnt
+                                                                                        //drips
 
-//~you can re-upload but tag my channel
-//or put my channel link in the description.
-//~you can recode or copy the codes but give
-//credit.
-//https://wa.me/+27634090203 
-//Drips Memes
-
-//═══════[modules]════════\\
-require('./config')
+require('./settings')
 const { default: ZimBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 const pino = require('pino')
@@ -70,21 +65,20 @@ async function startZimBotInc() {
             let metadata = await ZimBotInc.groupMetadata(anu.id)
             let participants = anu.participants
             for (let num of participants) {
-//═══════[get profile pic]════════\\
+
                 try {
                     ppuser = await ZimBotInc.profilePictureUrl(num, 'image')
                 } catch {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
-//═══════[get group dp]════════\\
+//grupo
                 try {
                     ppgroup = await ZimBotInc.profilePictureUrl(anu.id, 'image')
                 } catch {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                 
-//═══════[welcome]════════\\
 let nama = await ZimBotInc.getName(num)
 memb = metadata.participants.length
 
@@ -108,7 +102,7 @@ I'm not sure if it was a goodbye chomie, but it was fun while it lasted l always
         }
     })
 	
-//═══════[setting]════════\\
+//setting
     ZimBotInc.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
