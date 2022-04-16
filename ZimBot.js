@@ -2519,26 +2519,25 @@
                                                                                                                     locationMessage: {
                                                                                                                     jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗛𝗶 😌 ${pushname}
-                                                                                         𝘎𝘙𝘌𝘌𝘛𝘐𝘕𝘎𝘚 𝘞𝘈𝘎𝘞𝘈𝘈𝘕💪
-                                                                                         
-                                                                                        ╭──────[ 𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨 ]
-                                                                                        │💎𝗦𝗣𝗘𝗘𝗗 : ${latensie.toFixed(4)} 𝗦𝗘𝗖𝗢𝗡𝗗𝗦
-                                                                                        │
-                                                                                        │💎𝗥𝗨𝗡𝗧𝗜𝗠𝗘 : ${runtime(process.uptime())}
-                                                                                        │
-                                                                                        │💎𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ZIM BOT  INC
-                                                                                        │
-                                                                                        │💎𝗢𝗪𝗡𝗘𝗥 𝗡𝗔𝗠𝗘: DRIPS
-                                                                                        ┃
-                                                                                        ┃💎𝗢𝗪𝗡𝗘𝗥: ${global.owner}
-                                                                                        ┃
-                                                                                        ┃💎𝗛𝗢𝗦𝗧: KALI LINUX MAC
-                                                                                        ┃
-                                                                                        ┃💎𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠: ${os.platform()}
-                                                                                        ╰─────────────────────⦁
-                                                                                        
-                                                                                        `,
-                                                                                                                    hydratedButtons: [{
+𝘎𝘙𝘌𝘌𝘛𝘐𝘕𝘎𝘚 𝘞𝘈𝘎𝘞𝘈𝘈𝘕💪
+
+╭──────[ 𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨 ]
+│💎𝗦𝗣𝗘𝗘𝗗 : ${latensie.toFixed(4)} 𝗦𝗘𝗖𝗢𝗡𝗗𝗦
+│
+│💎𝗥𝗨𝗡𝗧𝗜𝗠𝗘 : ${runtime(process.uptime())}
+│
+│💎𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ZIM BOT  INC
+│
+│💎𝗢𝗪𝗡𝗘𝗥 𝗡𝗔𝗠𝗘: DRIPS
+┃
+┃💎𝗢𝗪𝗡𝗘𝗥: ${global.owner}
+┃
+┃💎𝗛𝗢𝗦𝗧: KALI LINUX MAC
+┃
+┃💎𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠: ${os.platform()}
+╰─────────────────────⦁
+`,
+hydratedButtons: [{
                                                                                                                         urlButton: {
                                                                                                                             displayText: 'SUBSCRIBE',
                                                                                                                             url: 'https://youtu.be/QU9ffSMTLoY'
@@ -3283,215 +3282,208 @@
                                                                                         break
                                                                                           case 'allmenu': {
                                                                                                anu = `
-                                                                                           ╭───────────╮
-                                                                                           │𝗭𝗜𝗠𝗕𝗢𝗧-𝗠𝗘𝗡𝗨  ▎
-                                                                                           ╰───────────╯
-                                                                                          ╭──❰ 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🔵 ${prefix}grouplink
-                                                                                          │🔵 ${prefix}ephemeral
-                                                                                          │🔵 ${prefix}setgrouppp
-                                                                                          │🔵 ${prefix}setname
-                                                                                          │🔵 ${prefix}group
-                                                                                          │🔵 ${prefix}editinfo
-                                                                                          │🔵 ${prefix}grupinfo
-                                                                                          │🔵 ${prefix}add
-                                                                                          │🔵 ${prefix}kick
-                                                                                          │🔵 ${prefix}promote
-                                                                                          │🔵 ${prefix}demote
-                                                                                          ╰────────────⦁
+    ╭───────────╮
+    │𝗭𝗜𝗠𝗕𝗢𝗧-𝗠𝗘𝗡𝗨  ▎
+    ╰───────────╯
+    ╭──❰ 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 ❱
+    │🔵 ${prefix}grouplink
+    │🔵 ${prefix}ephemeral
+    │🔵 ${prefix}setgrouppp
+    │🔵 ${prefix}setname
+    │🔵 ${prefix}group
+    │🔵 ${prefix}editinfo
+    │🔵 ${prefix}grupinfo
+    │🔵 ${prefix}add
+    │🔵 ${prefix}kick
+    │🔵 ${prefix}promote
+    │🔵 ${prefix}demote
+    ╰────────────⦁
+
+    ╭──❰ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨 ❱
+    │🌍 ${prefix}tiktoknowm
+    │🌍 ${prefix}tiktokwm
+    │🌍 ${prefix}tiktokmp3
+    │🌍 ${prefix}instagram
+    │🌍 ${prefix}ig2
+    │🌍 ${prefix}igreels
+    │🌍 ${prefix}igtv
+    │🌍 ${prefix}twitter
+    │🌍 ${prefix}twittermp3
+    │🌍 ${prefix}ytmp3
+    │🌍 ${prefix}ytmp4
+    │🌍 ${prefix}getmusic
+    │🌍 ${prefix}getvideo
+    ╰────────────⦁
+
+    ╭──❰ 𝗦𝗘𝗔𝗥𝗖𝗛 𝗠𝗘𝗡𝗨 ❱
+    │💮 ${prefix}play
+    │💮 ${prefix}yts
+    │💮 ${prefix}google
+    │💮 ${prefix}gimage
+    │💮 ${prefix}pinterest
+    │💮 ${prefix}wallpaper
+    │💮 ${prefix}wikimedia
+    │💮 ${prefix}ytsearch
+    ╰────────────⦁
+
+    ╭──❰ 𝗥𝗔𝗡𝗗𝗢𝗠 𝗠𝗘𝗡𝗨 ❱
+    │🧱 ${prefix}coffee
+    │🧱 ${prefix}couplepp
+    ╰─────────────⦁
+ 
+    ╭──❰ 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 ❱
+    │🪟 ${prefix}couple
+    │🪟 ${prefix}mysoulmate
+    │🪟 ${prefix}math
+    ╰────────────⦁
+
+    ╭──❰ 𝗩𝗢𝗜𝗖𝗘 𝗠𝗘𝗡𝗨 ❱
+    │🪞 ${prefix}bass
+    │🪞 ${prefix}blown
+    │🪞 ${prefix}deep
+    │🪞 ${prefix}earrape
+    │🪞 ${prefix}fast
+    │🪞 ${prefix}fat
+    │🪞 ${prefix}nightcore
+    │🪞 ${prefix}reverse
+    │🪞 ${prefix}robot
+    │🪞 ${prefix}slow
+    │🪞 ${prefix}squirrel
+    ╰────────────⦁
                                                                                           
-                                                                                          ╭──❰ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🌍 ${prefix}tiktoknowm
-                                                                                          │🌍 ${prefix}tiktokwm
-                                                                                          │🌍 ${prefix}tiktokmp3
-                                                                                          │🌍 ${prefix}instagram
-                                                                                          │🌍 ${prefix}ig2
-                                                                                          │🌍 ${prefix}igreels
-                                                                                          │🌍 ${prefix}igtv
-                                                                                          │🌍 ${prefix}twitter
-                                                                                          │🌍 ${prefix}twittermp3
-                                                                                          │🌍 ${prefix}ytmp3
-                                                                                          │🌍 ${prefix}ytmp4
-                                                                                          │🌍 ${prefix}getmusic
-                                                                                          │🌍 ${prefix}getvideo
-                                                                                          ╰────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗦𝗘𝗔𝗥𝗖𝗛 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │💮 ${prefix}play
-                                                                                          │💮 ${prefix}yts
-                                                                                          │💮 ${prefix}google
-                                                                                          │💮 ${prefix}gimage
-                                                                                          │💮 ${prefix}pinterest
-                                                                                          │💮 ${prefix}wallpaper
-                                                                                          │💮 ${prefix}wikimedia
-                                                                                          │💮 ${prefix}ytsearch
-                                                                                          ╰────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗥𝗔𝗡𝗗𝗢𝗠 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🧱 ${prefix}coffee
-                                                                                          │🧱 ${prefix}couplepp
-                                                                                          ╰─────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🪟 ${prefix}couple
-                                                                                          │🪟 ${prefix}mysoulmate
-                                                                                          │🪟 ${prefix}math
-                                                                                          ╰────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗩𝗢𝗜𝗖𝗘 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🪞 ${prefix}bass
-                                                                                          │🪞 ${prefix}blown
-                                                                                          │🪞 ${prefix}deep
-                                                                                          │🪞 ${prefix}earrape
-                                                                                          │🪞 ${prefix}fast
-                                                                                          │🪞 ${prefix}fat
-                                                                                          │🪞 ${prefix}nightcore
-                                                                                          │🪞 ${prefix}reverse
-                                                                                          │🪞 ${prefix}robot
-                                                                                          │🪞 ${prefix}slow
-                                                                                          │🪞 ${prefix}squirrel
-                                                                                          ╰────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗖𝗢𝗡𝗩𝗘𝗥𝗧 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🔵 ${prefix}toimage
-                                                                                          │🔵 ${prefix}removebg
-                                                                                          │🔵 ${prefix}sticker
-                                                                                          │🔵 ${prefix}emojimix
-                                                                                          │🔵 ${prefix}tovideo
-                                                                                          │🔵 ${prefix}togif
-                                                                                          │🔵 ${prefix}tourl
-                                                                                          │🔵 ${prefix}ebinary
-                                                                                          │🔵 ${prefix}dbinary
-                                                                                          ╰─────────────⦁
+    ╭──❰ 𝗖𝗢𝗡𝗩𝗘𝗥𝗧 𝗠𝗘𝗡𝗨 ❱
+    │🔵 ${prefix}toimage
+    │🔵 ${prefix}removebg
+    │🔵 ${prefix}sticker
+    │🔵 ${prefix}emojimix
+    │🔵 ${prefix}tovideo
+    │🔵 ${prefix}togif
+    │🔵 ${prefix}tourl
+    │🔵 ${prefix}ebinary
+    │🔵 ${prefix}dbinary
+    ╰─────────────⦁
                                                                                         
-                                                                                          ╭──❰ *RANDOM ANIME* ❱
-                                                                                          │🐦 ${prefix}loli
-                                                                                          │🐦 ${prefix}neko
-                                                                                          │🐦 ${prefix}waifu
-                                                                                          │🐦 ${prefix}shinobu
-                                                                                          │🐦 ${prefix}megumin
-                                                                                          │🐦 ${prefix}bully
-                                                                                          │🐦 ${prefix}cuddle
-                                                                                          │🐦 ${prefix}cry
-                                                                                          │🐦 ${prefix}hug
-                                                                                          │🐦 ${prefix}awoo
-                                                                                          │🐦 ${prefix}kiss
-                                                                                          │🐦 ${prefix}lick
-                                                                                          │🐦 ${prefix}pat
-                                                                                          │🐦 ${prefix}smug
-                                                                                          │🐦 ${prefix}bonk
-                                                                                          │🐦 ${prefix}yeet
-                                                                                          │🐦 ${prefix}blush
-                                                                                          │🐦 ${prefix}smile
-                                                                                          │🐦 ${prefix}wave
-                                                                                          │🐦 ${prefix}highfive
-                                                                                          │🐦 ${prefix}handhold
-                                                                                          │🐦 ${prefix}nom
-                                                                                          │🐦 ${prefix}bite
-                                                                                          │🐦 ${prefix}glomp
-                                                                                          │🐦 ${prefix}slap
-                                                                                          │🐦 ${prefix}kill
-                                                                                          │🐦 ${prefix}happy
-                                                                                          │🐦 ${prefix}wink
-                                                                                          │🐦 ${prefix}poke
-                                                                                          │🐦 ${prefix}dance
-                                                                                          │🐦 ${prefix}cringe
-                                                                                          ╰─────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗠𝗜𝗦𝗖 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🪐 ${prefix}speedtest
-                                                                                          │🪐 ${prefix}ping
-                                                                                          │🪐 ${prefix}owner
-                                                                                          │🪐 ${prefix}donate
-                                                                                          │🪐 ${prefix}menu
-                                                                                          │🪐 ${prefix}delete
-                                                                                          │🪐 ${prefix}chatinfo
-                                                                                          │🪐 ${prefix}quoted
-                                                                                          │🪐 ${prefix}listpc
-                                                                                          │🪐 ${prefix}listgc
-                                                                                          │🪐 ${prefix}listonline
-                                                                                          │🪐 ${prefix}report
-                                                                                          ╰─────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🗂️ ${prefix}setcmd
-                                                                                          │🗂️ ${prefix}listcmd
-                                                                                          │🗂️ ${prefix}delcmd
-                                                                                          │🗂️ ${prefix}lockcmd
-                                                                                          │🗂️ ${prefix}addmsg
-                                                                                          │🗂️ ${prefix}listmsg
-                                                                                          │🗂️ ${prefix}getmsg
-                                                                                          │🗂️ ${prefix}delmsg
-                                                                                          ╰─────────────⦁
-                                                                                          
-                                                                                          ╭──❰ 𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗖𝗛𝗔𝗧 ❱
-                                                                                          │🔲 ${prefix}start
-                                                                                          │🔲 ${prefix}next
-                                                                                          │🔲 ${prefix}stop
-                                                                                          ╰─────────────⦁
-                                                                                        
-                                                                                          ╭──❰ 𝗧𝗘𝗫𝗧 𝗣𝗥𝗢 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │⚽ ${prefix}3dchristmas
-                                                                                          │⚽ ${prefix}3ddeepsea
-                                                                                          │⚽ ${prefix}americanflag
-                                                                                          │⚽ ${prefix}3dscifi
-                                                                                          │⚽ ${prefix}3drainbow
-                                                                                          │⚽ ${prefix}3dwaterpipe
-                                                                                          │⚽ ${prefix}halloweenskeleton
-                                                                                          │⚽ ${prefix}sketch
-                                                                                          │⚽ ${prefix}bluecircuit
-                                                                                          │⚽ ${prefix}space
-                                                                                          │⚽ ${prefix}metallic
-                                                                                          │⚽ ${prefix}fiction
-                                                                                          │⚽ ${prefix}greenhorror
-                                                                                          │⚽ ${prefix}transformer
-                                                                                          │⚽ ${prefix}berry
-                                                                                          │⚽ ${prefix}thunder
-                                                                                          │⚽ ${prefix}magma
-                                                                                          │⚽ ${prefix}3dcrackedstone
-                                                                                          │⚽ ${prefix}3dneonlight
-                                                                                          │⚽ ${prefix}impressiveglitch
-                                                                                          │⚽ ${prefix}naturalleaves
-                                                                                          │⚽ ${prefix}fireworksparkle
-                                                                                          │⚽ ${prefix}matrix
-                                                                                          │⚽ ${prefix}dropwater
-                                                                                          │⚽ ${prefix}harrypotter
-                                                                                          │⚽ ${prefix}foggywindow
-                                                                                          │⚽ ${prefix}neondevils
-                                                                                          │⚽ ${prefix}christmasholiday
-                                                                                          │⚽ ${prefix}3dgradient
-                                                                                          │⚽ ${prefix}blackpink
-                                                                                          │⚽ ${prefix}gluetext
-                                                                                          ╰─────────────⦁
-                                                                                            
-                                                                                          ╭───❰ 𝗘𝗣𝗛𝗢𝗧𝗢 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │❶ ${prefix}ffcover
-                                                                                          │❷ ${prefix}crossfire
-                                                                                          │❸ ${prefix}galaxy
-                                                                                          │❹ ${prefix}glass
-                                                                                          │❺ ${prefix}neon
-                                                                                          │❻ ${prefix}beach
-                                                                                          │❼ ${prefix}blackpink
-                                                                                          │❽ ${prefix}igcertificate
-                                                                                          │❾ ${prefix}ytcertificate
-                                                                                          └───────────⦁
-                                                                                        
-                                                                                          ╭──❰ 𝗦𝗬𝗦𝗧𝗘𝗠 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │⚙️ ${prefix}antilink
-                                                                                          │⚙️ ${prefix}mute
-                                                                                          │⚙️ ${prefix}antiwame
-                                                                                          ╰─────────────⦁
-                                                                                          
-                                                                                          ╭───❰ 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ❱
-                                                                                          │🎀 ${prefix}chat
-                                                                                          │🎀 ${prefix}join
-                                                                                          │🎀 ${prefix}leave
-                                                                                          │🎀 ${prefix}setbotpp
-                                                                                          │🎀 ${prefix}block
-                                                                                          │🎀 ${prefix}unblock
-                                                                                          │🎀 ${prefix}bcgroup
-                                                                                          │🎀 ${prefix}bcall
-                                                                                          ╰────────────⦁`
+    ╭──❰ *RANDOM ANIME* ❱
+    │🐦 ${prefix}loli
+    │🐦 ${prefix}neko
+    │🐦 ${prefix}waifu
+    │🐦 ${prefix}shinobu
+    │🐦 ${prefix}megumin
+    │🐦 ${prefix}bully
+    │🐦 ${prefix}cuddle
+    │🐦 ${prefix}cry
+    │🐦 ${prefix}hug
+    │🐦 ${prefix}awoo
+    │🐦 ${prefix}kiss
+    │🐦 ${prefix}lick
+    │🐦 ${prefix}pat
+    │🐦 ${prefix}smug
+    │🐦 ${prefix}bonk
+    │🐦 ${prefix}yeet
+    │🐦 ${prefix}blush
+    │🐦 ${prefix}smile
+    │🐦 ${prefix}wave
+    │🐦 ${prefix}highfive
+    │🐦 ${prefix}handhold
+    │🐦 ${prefix}nom
+    │🐦 ${prefix}bite
+    │🐦 ${prefix}glomp
+    │🐦 ${prefix}slap
+    │🐦 ${prefix}kill
+    │🐦 ${prefix}happy
+    │🐦 ${prefix}wink
+    │🐦 ${prefix}poke
+    │🐦 ${prefix}dance
+    │🐦 ${prefix}cringe
+    ╰─────────────⦁
+    ╭──❰ 𝗠𝗜𝗦𝗖 𝗠𝗘𝗡𝗨 ❱
+    │🪐 ${prefix}speedtest
+    │🪐 ${prefix}ping
+    │🪐 ${prefix}owner
+    │🪐 ${prefix}donate
+    │🪐 ${prefix}menu
+    │🪐 ${prefix}delete
+    │🪐 ${prefix}chatinfo
+    │🪐 ${prefix}quoted
+    │🪐 ${prefix}listpc
+    │🪐 ${prefix}listgc
+    │🪐 ${prefix}listonline
+    │🪐 ${prefix}report
+    ╰─────────────⦁
+    ╭──❰ 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗠𝗘𝗡𝗨 ❱
+    │🗂️ ${prefix}setcmd
+    │🗂️ ${prefix}listcmd
+    │🗂️ ${prefix}delcmd
+    │🗂️ ${prefix}lockcmd
+    │🗂️ ${prefix}addmsg
+    │🗂️ ${prefix}listmsg
+    │🗂️ ${prefix}getmsg
+    │🗂️ ${prefix}delmsg
+    ╰─────────────⦁                                                                     
+    ╭──❰ 𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗖𝗛𝗔𝗧 ❱
+    │🔲 ${prefix}start
+    │🔲 ${prefix}next
+    │🔲 ${prefix}stop
+    ╰─────────────⦁
+    ╭──❰ 𝗧𝗘𝗫𝗧 𝗣𝗥𝗢 𝗠𝗘𝗡𝗨 ❱
+    │⚽ ${prefix}3dchristmas
+    │⚽ ${prefix}3ddeepsea
+    │⚽ ${prefix}americanflag
+    │⚽ ${prefix}3dscifi
+    │⚽ ${prefix}3drainbow
+    │⚽ ${prefix}3dwaterpipe
+    │⚽ ${prefix}halloweenskeleton
+    │⚽ ${prefix}sketch
+    │⚽ ${prefix}bluecircuit
+    │⚽ ${prefix}space
+    │⚽ ${prefix}metallic
+    │⚽ ${prefix}fiction
+    │⚽ ${prefix}greenhorror
+    │⚽ ${prefix}transformer
+    │⚽ ${prefix}berry
+    │⚽ ${prefix}thunder
+    │⚽ ${prefix}magma
+    │⚽ ${prefix}3dcrackedstone
+    │⚽ ${prefix}3dneonlight
+    │⚽ ${prefix}impressiveglitch
+    │⚽ ${prefix}naturalleaves
+    │⚽ ${prefix}fireworksparkle
+    │⚽ ${prefix}matrix
+    │⚽ ${prefix}dropwater
+    │⚽ ${prefix}harrypotter
+    │⚽ ${prefix}foggywindow
+    │⚽ ${prefix}neond
+    │⚽ ${prefix}christmasholiday
+    │⚽ ${prefix}3dgradient
+    │⚽ ${prefix}blackpink
+    │⚽ ${prefix}gluetext
+    ╰─────────────⦁
+    ╭───❰ 𝗘𝗣𝗛𝗢𝗧𝗢 𝗠𝗘𝗡𝗨 ❱
+    │❶ ${prefix}ffcover
+    │❷ ${prefix}crossfire
+    │❸ ${prefix}galaxy
+    │❹ ${prefix}glass
+    │❺ ${prefix}neon
+    │❻ ${prefix}beach
+    │❼ ${prefix}blackpink
+    │❽ ${prefix}igcertificate
+    │❾ ${prefix}ytcertificate
+    └───────────⦁
+    ╭──❰ 𝗦𝗬𝗦𝗧𝗘𝗠 𝗠𝗘𝗡𝗨 ❱
+    │⚙️ ${prefix}antilink
+    │⚙️ ${prefix}mute
+    │⚙️ ${prefix}antiwame
+    ╰─────────────⦁
+    ╭───❰ 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ❱
+    │🎀 ${prefix}chat
+    │🎀 ${prefix}join
+    │🎀 ${prefix}leave
+    │🎀 ${prefix}setbotpp
+    │🎀 ${prefix}block
+    │🎀 ${prefix}unblock
+    │🎀 ${prefix}bcgroup
+    │🎀 ${prefix}bcall
+    ╰────────────⦁`
                                                                                             const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
                                                                                                                 hydratedTemplate: {
