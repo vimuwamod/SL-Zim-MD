@@ -586,6 +586,11 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 100000
+    },
+    "27781004118@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 90
     }
   },
   "chats": {
