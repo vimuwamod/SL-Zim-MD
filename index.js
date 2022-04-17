@@ -90,11 +90,11 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 Description: ${metadata.desc}
 
-Welcome To Anonymous hacks, Smiling nuclear, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗮𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀 𝗵𝗮𝗰𝗸𝘀, 𝘀𝗺𝗶𝗹𝗶𝗻𝗴 𝗻𝘂𝗰𝗹𝗲𝗮𝗿, 𝗳𝗲𝗲𝗹 𝗮𝘁 𝗵𝗼𝗺𝗲 !`} )
                 } else if (anu.action == 'remove') {
-                    ZimBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Left ${metadata.subject}
+                    ZimBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} 𝗸𝗶𝗰𝗸𝗲𝗱 𝗼𝘂𝘁 𝗼𝗳 ${metadata.subject}
 
-I'm not sure if it was a goodbye chomie, but it was fun while it lasted l always miss you 🤗` })
+ '𝗕𝘆𝗲 𝗺𝘆 𝗹𝗼𝘃𝗲𝗹𝘆 𝗳𝗿𝗶𝗲𝗻𝗱 𝗗𝗼𝗻𝘁 𝗰𝗼𝗺𝗲 𝗯𝗮𝗰𝗸 𝗵𝗲𝗿𝗲' })
                 }
             }
         } catch (err) {
