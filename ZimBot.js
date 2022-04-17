@@ -2563,8 +2563,7 @@ hydratedButtons: [{
                                                                                         case 'command':{
                                                                                         let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                         listMessage :{
-                                                                                                            title: `Hi My lovely friend ${pushname}`,
-                                                                                                            description: `*WhatsApp bot with rich cool features*`,
+                                                                                                            description: `*PLEASE SELECT MENU BELOW*`,
                                                                                                             buttonText: "𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨",
                                                                                                             footerText: "ZIM BOT INC 2022",
                                                                                                             listType: "SINGLE_SELECT",

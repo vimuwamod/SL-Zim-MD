@@ -72,86 +72,66 @@ async function startZimBotInc() {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
-//grupo
-                try {
-                    ppgroup = await ZimBotInc.profilePictureUrl(anu.id, 'image')
-                } catch {
-                    ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-                }
-                
-let nama = await ZimBotInc.getName(num)
-memb = metadata.participants.length
 
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.imgur.com/XKXThYB.jpeg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
-
-Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.imgur.com/XKXThYB.jpeg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
-                if (anu.action == 'add') {
-                    ZimBotInc.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}
-
-Description: ${metadata.desc}
-
-𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗮𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀 𝗵𝗮𝗰𝗸𝘀, 𝘀𝗺𝗶𝗹𝗶𝗻𝗴 𝗻𝘂𝗰𝗹𝗲𝗮𝗿, 𝗳𝗲𝗲𝗹 𝗮𝘁 𝗵𝗼𝗺𝗲 !`} )
-                } else if (anu.action == 'remove') {
-                    ZimBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} 𝗸𝗶𝗰𝗸𝗲𝗱 𝗼𝘂𝘁 𝗼𝗳 ${metadata.subject}
-
- '𝗕𝘆𝗲 𝗺𝘆 𝗹𝗼𝘃𝗲𝗹𝘆 𝗳𝗿𝗶𝗲𝗻𝗱 𝗗𝗼𝗻𝘁 𝗰𝗼𝗺𝗲 𝗯𝗮𝗰𝗸 𝗵𝗲𝗿𝗲' })
-                } else {
-                                                                                                         let buttons = [
-                                                                                                                { buttonId: '', buttonText: { displayText: '𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗖𝗛𝗢𝗠𝗜𝗘' }, type: 1 },
-                                                                                                                { buttonId: '', buttonText: { displayText: '𝗙𝗘𝗘𝗟 𝗔𝗧 𝗛𝗢𝗠𝗘' }, type: 1 }
-                                                                                                            ]
-                                                                                                            await ZimBotInc.sendButtonText(m.chat, buttons, `𝗪𝗘𝗟𝗖𝗢𝗠𝗘`, ZimBotInc.user.name, m)
-                                                                                                        }
-            }
-        } catch (err) {
-            console.log(err)
-        }
-    })
-	
+            
+                            // Get Profile Picture Group
+                            try {
+                                ppgroup = await ZimBotInc.profilePictureUrl(anu.id, 'image')
+                            } catch {
+                                ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                            }
+            
+                           
+                            
+                        }
+                    } catch (err) {
+                        console.log(err)
+                    }
+                })
 //setting
-    ZimBotInc.decodeJid = (jid) => {
-        if (!jid) return jid
-        if (/:\d+@/gi.test(jid)) {
-            let decode = jidDecode(jid) || {}
-            return decode.user && decode.server && decode.user + '@' + decode.server || jid
-        } else return jid
-    }
-    
-    ZimBotInc.ev.on('contacts.update', update => {
-        for (let contact of update) {
-            let id = ZimBotInc.decodeJid(contact.id)
-            if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
-        }
-    })
+ZimBotInc.decodeJid = (jid) => {
+    if (!jid) return jid
+    if (/:\d+@/gi.test(jid)) {
+        let decode = jidDecode(jid) || {}
+        return decode.user && decode.server && decode.user + '@' + decode.server || jid
+    } else return jid
+}
 
-    ZimBotInc.getName = (jid, withoutContact  = false) => {
-        id = ZimBotInc.decodeJid(jid)
-        withoutContact = ZimBotInc.withoutContact || withoutContact 
-        let v
-        if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
-            v = store.contacts[id] || {}
-            if (!(v.name || v.subject)) v = ZimBotInc.groupMetadata(id) || {}
-            resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
-        })
-        else v = id === '0@s.whatsapp.net' ? {
-            id,
-            name: 'WhatsApp'
-        } : id === ZimBotInc.decodeJid(ZimBotInc.user.id) ?
-            ZimBotInc.user :
-            (store.contacts[id] || {})
-            return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
+ZimBotInc.ev.on('contacts.update', update => {
+    for (let contact of update) {
+        let id = ZimBotInc.decodeJid(contact.id)
+        if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
     }
+})
+
+ZimBotInc.getName = (jid, withoutContact  = false) => {
+    id = ZimBotInc.decodeJid(jid)
+    withoutContact = ZimBotInc.withoutContact || withoutContact 
+    let v
+    if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
+        v = store.contacts[id] || {}
+        if (!(v.name || v.subject)) v = ZimBotInc.groupMetadata(id) || {}
+        resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
+    })
+    else v = id === '0@s.whatsapp.net' ? {
+        id,
+        name: 'WhatsApp'
+    } : id === ZimBotInc.decodeJid(ZimBotInc.user.id) ?
+        ZimBotInc.user :
+        (store.contacts[id] || {})
+        return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
+}
     
     ZimBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
-	let list = []
-	for (let i of kon) {
-	    list.push({
-	    	displayName: await ZimBotInc.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:GitHub: zim-bot\nitem2.X-ABLabel:Follow Me On Github\nitem3.URL:YouTube: Drips\nitem3.X-ABLabel:Youtube\nitem4.ADR:;;Zim, Mizoram;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
-	    })
-	}
-	ZimBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
-    }
+        let list = []
+        for (let i of kon) {
+            list.push({
+                displayName: await ZimBotInc.getName(i + '@s.whatsapp.net'),
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await ZimBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:ZIM BOT INC 2022\nitem2.EMAIL;type=INTERNET:GitHub: ZIM-BOT\nEND:VCARD`
+            })
+        }
+        ZimBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
+        }
     
     ZimBotInc.setStatus = (status) => {
         ZimBotInc.query({
@@ -360,7 +340,7 @@ Description: ${metadata.desc}
         }
 	let type = await FileType.fromBuffer(buffer)
         trueFileName = attachExtension ? (filename + '.' + type.ext) : filename
-        // save to file
+        // fila settings
         await fs.writeFileSync(trueFileName, buffer)
         return trueFileName
     }
@@ -455,6 +435,7 @@ Description: ${metadata.desc}
         return waMessage
     }
 
+    
     ZimBotInc.cMod = (jid, copy, text = '', sender = ZimBotInc.user.id, options = {}) => {
         //let copy = message.toJSON()
 		let mtype = Object.keys(copy.message)[0]
