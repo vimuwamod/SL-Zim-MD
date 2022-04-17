@@ -95,7 +95,7 @@ Description: ${metadata.desc}
                     ZimBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} 𝗸𝗶𝗰𝗸𝗲𝗱 𝗼𝘂𝘁 𝗼𝗳 ${metadata.subject}
 
  '𝗕𝘆𝗲 𝗺𝘆 𝗹𝗼𝘃𝗲𝗹𝘆 𝗳𝗿𝗶𝗲𝗻𝗱 𝗗𝗼𝗻𝘁 𝗰𝗼𝗺𝗲 𝗯𝗮𝗰𝗸 𝗵𝗲𝗿𝗲' })
-                }} else {
+                } else {
                                                                                                          let buttons = [
                                                                                                                 { buttonId: '', buttonText: { displayText: '𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗖𝗛𝗢𝗠𝗜𝗘' }, type: 1 },
                                                                                                                 { buttonId: '', buttonText: { displayText: '𝗙𝗘𝗘𝗟 𝗔𝗧 𝗛𝗢𝗠𝗘' }, type: 1 }
