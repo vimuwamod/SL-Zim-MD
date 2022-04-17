@@ -2518,23 +2518,14 @@
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
                                                                                                                     jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
-                                                                                                                    hydratedFooterText: `𝗛𝗶 😌 ${pushname}
-𝘎𝘙𝘌𝘌𝘛𝘐𝘕𝘎𝘚 𝘞𝘈𝘎𝘞𝘈𝘈𝘕💪
-
+                                                                                                                    hydratedFooterText: `𝗛𝗶  ${pushname}
 ╭──────[ 𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨 ]
-│💎𝗦𝗣𝗘𝗘𝗗 : ${latensie.toFixed(4)} 𝗦𝗘𝗖𝗢𝗡𝗗𝗦
-│
-│💎𝗥𝗨𝗡𝗧𝗜𝗠𝗘 : ${runtime(process.uptime())}
-│
 │💎𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ZIM BOT  INC
 │
 │💎𝗢𝗪𝗡𝗘𝗥 𝗡𝗔𝗠𝗘: DRIPS
 ┃
-┃💎𝗢𝗪𝗡𝗘𝗥: ${global.owner}
+┃💎𝗥𝗨𝗡𝗧𝗜𝗠𝗘 : ${runtime(process.uptime())}
 ┃
-┃💎𝗛𝗢𝗦𝗧: KALI LINUX MAC
-┃
-┃💎𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠: ${os.platform()}
 ╰─────────────────────⦁
 `,
 hydratedButtons: [{
