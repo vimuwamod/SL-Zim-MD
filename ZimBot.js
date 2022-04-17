@@ -1,7 +1,7 @@
 //                     zimbot.inc.pressents 
 //                     2022 production
 //                     Thanks to dikArdnt
-                                                                                        //drips
+                                                                                         //drips
 
                                                                                         require('./settings')
                                                                                         const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
