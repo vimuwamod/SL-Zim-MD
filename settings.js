@@ -51,7 +51,7 @@ global.limitawal = {
         potionawal: 1
      }    
 
-global.thumb = fs.readFileSync('./Zimbot/drips.jpg')
+global.thumb = fs.readFileSync('./image/drips.jpg')
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
