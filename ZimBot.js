@@ -112,7 +112,7 @@
                                                                                          let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
                                                                                          let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
                                                                                         
-                                                                                        let drips = fs.readFileSync('./Zimbot/drips.jpg')
+                                                                                        let drips = fs.readFileSync('./image/drips.jpg')
                                                                                         
                                                                                         const antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
                                                                                         
@@ -181,11 +181,11 @@
                                                                                         return dDisplay + hDisplay + mDisplay + sDisplay;
                                                                                         }
                                                                                             const reply = (teks) => {
-                                                                                                    ZimBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Join Zim Bot Support GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Zimbot/drips.jpg`),"sourceUrl": "https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A"}}}, { quoted: m})
+                                                                                                    ZimBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Join Zim Bot Support GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./image/drips.jpg`),"sourceUrl": "https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A"}}}, { quoted: m})
                                                                                                 }
                                                                                                 
                                                                                                 const replay = (teks) => {
-                                                                                                    ZimBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Subscribe DRIPS OFC YT Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Zimbot/drips.jpg`),"sourceUrl": "https://youtu.be/cZ3UrzArI5A"}}}, { quoted: m})
+                                                                                                    ZimBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Subscribe DRIPS OFC YT Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./image/drips.jpg`),"sourceUrl": "https://youtu.be/cZ3UrzArI5A"}}}, { quoted: m})
                                                                                                 }
                                                                                         try {
                                                                                                     let isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -1293,7 +1293,7 @@
                                                                                                                             id: 'sc'
                                                                                                                         }
                                                                                                                     }]
-                                                                                                              fatihgans = fs.readFileSync('./Zimbot/drips.jpg')
+                                                                                                              fatihgans = fs.readFileSync('./image/drips.jpg')
                                                                                                               let txt = `「 ZimBot Broadcast 」\n\n${text}`
                                                                                                               ZimBotInc.send5ButImg(i, txt, ZimBotInc.user.name, fatihgans, btn)
                                                                                                             }
@@ -1318,7 +1318,7 @@
                                                                                                                             id: 'owner'
                                                                                                                         }
                                                                                                                     }]
-                                                                                                              fatihgans = fs.readFileSync('./Zimbot/drips.jpg')
+                                                                                                              fatihgans = fs.readFileSync('./image/drips.jpg')
                                                                                                               let txt = `「 ZIM BOT BROADCAST 」\n\n${text}`
                                                                                                               ZimBotInc.send5ButImg(yoi, txt, `Broadcast By ${global.pengguna}`, fatihgans, btn)
                                                                                                 }
@@ -2473,7 +2473,7 @@
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2517,7 +2517,7 @@
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗛𝗶 😌 ${pushname}
 𝘎𝘙𝘌𝘌𝘛𝘐𝘕𝘎𝘚 𝘞𝘈𝘎𝘞𝘈𝘈𝘕💪
 
@@ -2574,109 +2574,109 @@ hydratedButtons: [{
                                                                                                         listMessage :{
                                                                                                             title: `Hi My lovely friend ${pushname}`,
                                                                                                             description: `*WhatsApp bot with rich cool features*`,
-                                                                                                            buttonText: "ZIMBOT MENU",
+                                                                                                            buttonText: "𝗭𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨",
                                                                                                             footerText: "ZIM BOT INC 2022",
                                                                                                             listType: "SINGLE_SELECT",
                                                                                                             sections: [{
-                                                                                                                        "title": "GROUP COMMANDS",
+                                                                                                                        "title": "𝗭𝗜𝗠 𝗕𝗢𝗧 𝗣𝗥𝗘𝗦𝗘𝗡𝗧𝗦",
                                                                                                                         "rows": [
                                                                                                                             {
-                                                                                                                                "title": "GROUP CMD",
+                                                                                                                                "title": "𝗚𝗥𝗢𝗨𝗣 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}grupmenu`
                                                                                                                             }
                                                                                                                         ]
                                                                                                                     },
                                                                                                                     {
-                                                                                                                        "title": "ZIMBOT INC 2022 FEATURES",
+                                                                                                                        "title": "𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖",
                                                                                                                         "rows": [
                                                                                                                             {
-                                                                                                                                "title": "MENU CMD",
+                                                                                                                                "title": "𝗠𝗘𝗡𝗨 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}allmenu`
                                                                                                                             },
                                                                                                                             {
-                                                                                                                                "title": "DOWNLOAD CMD",
+                                                                                                                                "title": "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}downloadmenu`
                                                                                                                             },
                                                                                                                             {
-                                                                                                                                "title": "SEARCH CMD",
+                                                                                                                                "title": "𝗦𝗘𝗔𝗥𝗖𝗛 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}searchmenu`
                                                                                                                             },
                                                                                                                                 {
-                                                                                                                                    "title": "IMAGE CMD",
+                                                                                                                                    "title": "𝗜𝗠𝗔𝗚𝗘 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}imagemenu`
                                                                                                                                 },
                                                                                                                                 {
-                                                                                                                                    "title": "FUN CMD",
+                                                                                                                                    "title": "𝗙𝗨𝗡 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}funmenu`
                                                                                                                                 },
                                                                                                                                 {
-                                                                                                                                    "title": "CONVERT CMD",
+                                                                                                                                    "title": "𝗖𝗢𝗡𝗩𝗘𝗥𝗧 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}convertmenu`
                                                                                                                                 },
                                                                                                                                 {
-                                                                                                                                    "title": "RANDOM ANIME CMD",
+                                                                                                                                    "title": "𝗥𝗔𝗡𝗗𝗢𝗠 𝗔𝗡𝗜𝗠𝗘 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}ranimemenu`
                                                                                                                                 },
                                                                                                                                 {
-                                                                                                                                "title": "MISCELLANEOUS CMD",
+                                                                                                                                "title": "𝗠𝗜𝗦𝗖 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}nocategorymenu`
                                                                                                                                 },
                                                                                                                                 {
-                                                                                                                                    "title": "DATABASE CMD",
+                                                                                                                                    "title": "𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}databasemenu`
                                                                                                                                 },
                                                                                                                                 {
-                                                                                                                                    "title": "VOICE CMD",
+                                                                                                                                    "title": "𝗩𝗢𝗜𝗖𝗘 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}voicemenu`
                                                                                                                                 }
                                                                                                                         ]
                                                                                                                     },
                                                                                                                     {
-                                                                                                                        "title": "CHAT CMD",
+                                                                                                                        "title": "𝗖𝗛𝗔𝗧 𝗖𝗠𝗗",
                                                                                                                         "rows": [
                                                                                                                             {
-                                                                                                                                "title": "ANONYMOUS CMD",
+                                                                                                                                "title": "𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}anonymouschatmenu`
                                                                                                                             }
                                                                                                                         ]
                                                                                                                     },
                                                                                                                     {
-                                                                                                                        "title": "GROUP CMD",
+                                                                                                                        "title": "𝗚𝗥𝗢𝗨𝗣 𝗖𝗠𝗗",
                                                                                                                         "rows": [
                                                                                                                             {
-                                                                                                                                "title": "SYSTEM CMD",
+                                                                                                                                "title": "𝗦𝗬𝗦𝗧𝗘𝗠 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}sistemmenu`
                                                                                                                             }
                                                                                                                         ]
                                                                                                                     },
                                                                                                                     {
-                                                                                                                        "title": "OWNER",
+                                                                                                                        "title": "𝗢𝗪𝗡𝗘𝗥",
                                                                                                                         "rows": [
                                                                                                                             {
-                                                                                                                                "title": "OWNER CMD",
+                                                                                                                                "title": "𝗢𝗪𝗡𝗘𝗥 𝗖𝗠𝗗",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}ownermenu`
                                                                                                                             }
                                                                                                                         ]
                                                                                                                     },
                                                                                                                     {
-                                                                                                                        "title": "CREDIT",
+                                                                                                                        "title": "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 𝗕𝗢𝗧𝗦",
                                                                                                                         "rows": [
                                                                                                                             {
-                                                                                                                                "title": "ZIM BOT CREDITS",
+                                                                                                                                "title": "𝗭𝗜𝗠𝗕𝗢𝗧 𝗖𝗥𝗘𝗗𝗜𝗧𝗦",
                                                                                                                                 
                                                                                                                                 "rowId": `${prefix}tqtt`
                                                                                                                             }
@@ -2710,7 +2710,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2752,7 +2752,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: okemenu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2789,7 +2789,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2820,7 +2820,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2852,7 +2852,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2892,7 +2892,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `𝗭𝗜𝗠 𝗕𝗢𝗧 𝗜𝗡𝗖`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2926,7 +2926,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -2984,7 +2984,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3022,7 +3022,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3082,7 +3082,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3123,7 +3123,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3160,7 +3160,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3192,7 +3192,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3224,7 +3224,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3261,7 +3261,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
@@ -3489,7 +3489,7 @@ hydratedButtons: [{
                                                                                                                 hydratedTemplate: {
                                                                                                                     hydratedContentText: anu,
                                                                                                                     locationMessage: {
-                                                                                                                    jpegThumbnail: fs.readFileSync('./Zimbot/drips.jpg')},
+                                                                                                                    jpegThumbnail: fs.readFileSync('./image/drips.jpg')},
                                                                                                                     hydratedFooterText: `ZIM BOT INC`,
                                                                                                                     hydratedButtons: [{
                                                                                                                         urlButton: {
