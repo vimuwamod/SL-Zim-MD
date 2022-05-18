@@ -1565,8 +1565,8 @@ case 'antilink':
                                                                                                         let buttonMessage = {
                                                                                                             image: { url: images },
                                                                                                             caption: `*𝗚𝗢𝗢𝗚𝗟𝗘 𝗜𝗠𝗔𝗚𝗘*
-                                                                                        💫 *𝗤𝗨𝗘𝗥𝗬* : ${text}
-                                                                                        🔗 *𝗠𝗘𝗗𝗜𝗔 𝗨𝗥𝗟* : ${images}`,
+💫 *𝗤𝗨𝗘𝗥𝗬* : ${text}
+🔗 *𝗠𝗘𝗗𝗜𝗔 𝗨𝗥𝗟* : ${images}`,
                                                                                                             footer: ZimBotInc.user.name,
                                                                                                             buttons: buttons,
                                                                                                             headerType: 4
@@ -1581,15 +1581,15 @@ case 'antilink':
                                                                                                         let search = await yts(text)
                                                                                                         let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                                                                                                             ngen = `
-                                                                                        🔮 𝗧𝗜𝗧𝗟𝗘 : ${anu.title}
-                                                                                        🔮 𝗘𝗫𝗧 : Search
-                                                                                        🔮 𝗜𝗗 : ${anu.videoId}
-                                                                                        🔮 𝗗𝗨𝗥𝗔𝗧𝗜𝗢𝗡 : ${anu.timestamp}
-                                                                                        🔮 𝗩𝗜𝗘𝗪𝗘𝗥𝗦 : ${anu.views}
-                                                                                        🔮 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 : ${anu.ago}
-                                                                                        🔮 𝗔𝗨𝗧𝗛𝗢𝗥 : ${anu.author.name}
-                                                                                        🔮 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 : ${anu.author.url}
-                                                                                        🔮 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 : ${anu.description}
+🔮 𝗧𝗜𝗧𝗟𝗘 : ${anu.title}
+🔮 𝗘𝗫𝗧 : Search
+🔮 𝗜𝗗 : ${anu.videoId}
+🔮 𝗗𝗨𝗥𝗔𝗧𝗜𝗢𝗡 : ${anu.timestamp}
+🔮 𝗩𝗜𝗘𝗪𝗘𝗥𝗦 : ${anu.views}
+🔮 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 : ${anu.ago}
+🔮 𝗔𝗨𝗧𝗛𝗢𝗥 : ${anu.author.name}
+🔮 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 : ${anu.author.url}
+🔮 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 : ${anu.description}
                                                                                         `
                                                                                         message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   ZimBotInc.waUploadToServer })
                                                                                                         template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -1997,12 +1997,12 @@ case 'antilink':
                                                                                                     let buttonMessage = {
                                                                                                         image: { url: anu.author.profilePic },
                                                                                                     caption: `
-                                                                                        🔮 𝗧𝗜𝗧𝗟𝗘 : ${anu.title}
-                                                                                        🔮 𝗔𝗨𝗧𝗛𝗢𝗥 : ${anu.author.name}
-                                                                                        🔮 𝗟𝗜𝗞𝗘 : ${anu.like}
-                                                                                        🔮 𝗖𝗔𝗣𝗧𝗜𝗢𝗡 : ${anu.caption}
-                                                                                        🔮 𝗨𝗥𝗟 : ${anu.media[0]}
-                                                                                        To download media, please click one of the buttons below or enter the ytmp3/ytmp4 command with the url above
+🔮 𝗧𝗜𝗧𝗟𝗘 : ${anu.title}
+🔮 𝗔𝗨𝗧𝗛𝗢𝗥 : ${anu.author.name}
+🔮 𝗟𝗜𝗞𝗘 : ${anu.like}
+🔮 𝗖𝗔𝗣𝗧𝗜𝗢𝗡 : ${anu.caption}
+🔮 𝗨𝗥𝗟 : ${anu.media[0]}
+To download media, please click one of the buttons below or enter the ytmp3/ytmp4 command with the url above
                                                                                         `,
                                                                                                     footer: ZimBotInc.user.name,
                                                                                                     buttons,
@@ -2471,7 +2471,7 @@ case 'antilink':
                                                                                                             break
                                                                                         case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'zimbot': case 'drips':{
                                                                                                         anu = `Hi ${pushname}
-                                                                                        𝗭𝗶𝗺𝗯𝗼𝘁 𝗶𝘀 𝗵𝗲𝗿𝗲 𝗰𝗵𝗶𝗹𝗹𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝗯𝗶𝗴 𝗯𝗼𝘆𝘀`
+𝗭𝗶𝗺𝗯𝗼𝘁 𝗶𝘀 𝗵𝗲𝗿𝗲 𝗰𝗵𝗶𝗹𝗹𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝗯𝗶𝗴 𝗯𝗼𝘆𝘀`
                                                                                         const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
                                                                                                                 hydratedTemplate: {
@@ -2685,19 +2685,18 @@ hydratedButtons: [{
                                                                                                     break
                                                                                         case 'grupmenu': {
                                                                                                         anu = `
-                                                                                          *𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🌟 ${prefix}grouplink
-                                                                                          🌟 ${prefix}ephemeral
-                                                                                          🌟 ${prefix}setgrouppp
-                                                                                          🌟 ${prefix}setname
-                                                                                          🌟 ${prefix}group
-                                                                                          🌟 ${prefix}editinfo
-                                                                                          🌟 ${prefix}grupinfo
-                                                                                          🌟 ${prefix}add
-                                                                                          🌟 ${prefix}kick
-                                                                                          🌟 ${prefix}promote
-                                                                                          🌟 ${prefix}demote
+ *𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨*
+🌟 ${prefix}grouplink
+🌟 ${prefix}ephemeral
+🌟 ${prefix}setgrouppp
+🌟 ${prefix}setname
+🌟 ${prefix}group
+🌟 ${prefix}editinfo
+🌟 ${prefix}grupinfo
+🌟 ${prefix}add
+🌟 ${prefix}kick
+🌟 ${prefix}promote
+🌟 ${prefix}demote
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -2725,21 +2724,20 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'downloadmenu': {
                                                                                             okemenu = `
-                                                                                            *𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔮 ${prefix}tiktoknowm
-                                                                                          🔮 ${prefix}tiktokwm
-                                                                                          🔮 ${prefix}tiktokmp3
-                                                                                          🔮 ${prefix}instagram
-                                                                                          🔮 ${prefix}ig2
-                                                                                          🔮 ${prefix}igreels
-                                                                                          🔮 ${prefix}igtv
-                                                                                          🔮 ${prefix}twitter
-                                                                                          🔮 ${prefix}twittermp3
-                                                                                          🔮 ${prefix}ytmp3
-                                                                                          🔮 ${prefix}ytmp4
-                                                                                          🔮 ${prefix}getmusic
-                                                                                          🔮 ${prefix}getvideo
+*𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗠𝗘𝗡𝗨*
+🔮 ${prefix}tiktoknowm
+🔮 ${prefix}tiktokwm
+🔮 ${prefix}tiktokmp3
+🔮 ${prefix}instagram
+🔮 ${prefix}ig2
+🔮 ${prefix}igreels
+🔮 ${prefix}igtv
+🔮 ${prefix}twitter
+🔮 ${prefix}twittermp3
+🔮 ${prefix}ytmp3
+🔮 ${prefix}ytmp4
+🔮 ${prefix}getmusic
+🔮 ${prefix}getvideo
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -2767,16 +2765,15 @@ hydratedButtons: [{
                                                                                                     break 
                                                                                                     case 'searchmenu': {
                                                                                                         anu = `
-                                                                                                      *𝗦𝗘𝗔𝗥𝗖𝗛 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          💮 ${prefix}play
-                                                                                          💮 ${prefix}yts
-                                                                                          💮 ${prefix}google
-                                                                                          💮 ${prefix}gimage
-                                                                                          💮 ${prefix}pinterest
-                                                                                          💮 ${prefix}wallpaper
-                                                                                          💮 ${prefix}wikimedia
-                                                                                          💮 ${prefix}ytsearch
+*𝗦𝗘𝗔𝗥𝗖𝗛 𝗠𝗘𝗡𝗨*
+💮 ${prefix}play
+💮 ${prefix}yts
+💮 ${prefix}google
+💮 ${prefix}gimage
+💮 ${prefix}pinterest
+💮 ${prefix}wallpaper
+💮 ${prefix}wikimedia
+💮 ${prefix}ytsearch
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -2804,10 +2801,9 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'randommenu': {
                                                                                             anu = `
-                                                                                            *𝗥𝗔𝗡𝗗𝗢𝗠 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          ⚫ ${prefix}coffee
-                                                                                          ⚫ ${prefix}couplepp
+ *𝗥𝗔𝗡𝗗𝗢𝗠 𝗠𝗘𝗡𝗨*
+⚫ ${prefix}coffee
+⚫ ${prefix}couplepp
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -2835,11 +2831,10 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'funmenu': {
                                                                                             anu = `
-                                                                                            *𝗙𝗨𝗡 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔘 ${prefix}couple
-                                                                                          🔘 ${prefix}mysoulmate
-                                                                                          🔘 ${prefix}math 
+ *𝗙𝗨𝗡 𝗠𝗘𝗡𝗨*
+🔘 ${prefix}couple
+🔘 ${prefix}mysoulmate
+🔘 ${prefix}math 
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -2867,19 +2862,18 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'voicemenu': {
                                                                                             anu = `
-                                                                                            *𝗩𝗢𝗜𝗖𝗘 𝗖𝗛𝗔𝗡𝗚𝗘𝗥 𝗠𝗘𝗡𝗨*
-                                                                                            
-                                                                                          🔵 ${prefix}bass
-                                                                                          🔵 ${prefix}blown
-                                                                                          🔵 ${prefix}deep
-                                                                                          🔵 ${prefix}earrape
-                                                                                          🔵 ${prefix}fast
-                                                                                          🔵 ${prefix}fat
-                                                                                          🔵 ${prefix}nightcore
-                                                                                          🔵 ${prefix}reverse
-                                                                                          🔵 ${prefix}robot
-                                                                                          🔵 ${prefix}slow
-                                                                                          🔵 ${prefix}squirrel
+*𝗩𝗢𝗜𝗖𝗘 𝗖𝗛𝗔𝗡𝗚𝗘𝗥 𝗠𝗘𝗡𝗨*
+🔵 ${prefix}bass
+🔵 ${prefix}blown
+🔵 ${prefix}deep
+🔵 ${prefix}earrape
+🔵 ${prefix}fast
+🔵 ${prefix}fat
+🔵 ${prefix}nightcore
+🔵 ${prefix}reverse
+🔵 ${prefix}robot
+🔵 ${prefix}slow
+🔵 ${prefix}squirrel
                                                                                         `
                                                                                         const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -2907,14 +2901,13 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'religionmenukdksoejdjj': {
                                                                                             anu = `
-                                                                                            *𝗥𝗘𝗟𝗜𝗚𝗜𝗢𝗡 𝗠𝗘𝗡𝗨*
-                                                                                            
-                                                                                             (Islamic)
-                                                                                          🔵 ${prefix}iqra
-                                                                                          🔵 ${prefix}hadith
-                                                                                          🔵 ${prefix}alquran
-                                                                                          🔵 ${prefix}juzamma
-                                                                                          🔵 ${prefix}tafsirsurah`
+*𝗥𝗘𝗟𝗜𝗚𝗜𝗢𝗡 𝗠𝗘𝗡𝗨*
+ Islamic
+🔵 ${prefix}iqra
+🔵 ${prefix}hadith
+🔵 ${prefix}alquran
+🔵 ${prefix}juzamma
+🔵 ${prefix}tafsirsurah`
                                                                                         const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
                                                                                                                 hydratedTemplate: {
@@ -2941,38 +2934,38 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'horoscopemenukcodk': {
                                                                                             anu = `
-                                                                                            *𝗛𝗢𝗥𝗢𝗦𝗖𝗢𝗣𝗘 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔵 ${prefix}hockeynumber
-                                                                                          🔵 ${prefix}dreammeaning
-                                                                                          🔵 ${prefix}namemeaning
-                                                                                          🔵 ${prefix}fortunetelling
-                                                                                          🔵 ${prefix}marriageprediction
-                                                                                          🔵 ${prefix}wife&husband
-                                                                                          🔵 ${prefix}fortunetelling2
-                                                                                          🔵 ${prefix}matchname
-                                                                                          🔵 ${prefix}couplematch
-                                                                                          🔵 ${prefix}married
-                                                                                          🔵 ${prefix}businessnature
-                                                                                          🔵 ${prefix}sustenance
-                                                                                          🔵 ${prefix}profession
-                                                                                          🔵 ${prefix}fate
-                                                                                          🔵 ${prefix}potentialdisease
-                                                                                          🔵 ${prefix}tarot
-                                                                                          🔵 ${prefix}fengshui
-                                                                                          🔵 ${prefix}goodday
-                                                                                          🔵 ${prefix}badday
-                                                                                          🔵 ${prefix}unluckyday
-                                                                                          🔵 ${prefix}dragonday
-                                                                                          🔵 ${prefix}sustenance2
-                                                                                          🔵 ${prefix}luck
-                                                                                          🔵 ${prefix}weton
-                                                                                          🔵 ${prefix}character
-                                                                                          🔵 ${prefix}luck2
-                                                                                          🔵 ${prefix}fishing
-                                                                                          🔵 ${prefix}fertiletime
-                                                                                          🔵 ${prefix}zodiac
-                                                                                          🔵 ${prefix}shio`
+ *𝗛𝗢𝗥𝗢𝗦𝗖𝗢𝗣𝗘 𝗠𝗘𝗡𝗨*
+
+🔵 ${prefix}hockeynumber
+🔵 ${prefix}dreammeaning
+🔵 ${prefix}namemeaning
+🔵 ${prefix}fortunetelling
+🔵 ${prefix}marriageprediction
+🔵 ${prefix}wife&husband
+🔵 ${prefix}fortunetelling2
+🔵 ${prefix}matchname
+🔵 ${prefix}couplematch
+🔵 ${prefix}married
+🔵 ${prefix}businessnature
+🔵 ${prefix}sustenance
+🔵 ${prefix}profession
+🔵 ${prefix}fate
+🔵 ${prefix}potentialdisease
+🔵 ${prefix}tarot
+🔵 ${prefix}fengshui
+🔵 ${prefix}goodday
+🔵 ${prefix}badday
+🔵 ${prefix}unluckyday
+🔵 ${prefix}dragonday
+🔵 ${prefix}sustenance2
+🔵 ${prefix}luck
+🔵 ${prefix}weton
+🔵 ${prefix}character
+🔵 ${prefix}luck2
+🔵 ${prefix}fishing
+🔵 ${prefix}fertiletime
+🔵 ${prefix}zodiac
+🔵 ${prefix}shio`
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
                                                                                                                 hydratedTemplate: {
@@ -2999,17 +2992,17 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'convertmenu': {
                                                                                             anu = `
-                                                                                            *𝗖𝗢𝗡𝗩𝗘𝗥𝗧 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔵 ${prefix}toimage
-                                                                                          🔵 ${prefix}removebg
-                                                                                          🔵 ${prefix}sticker
-                                                                                          🔵 ${prefix}emojimix
-                                                                                          🔵 ${prefix}tovideo
-                                                                                          🔵 ${prefix}togif
-                                                                                          🔵 ${prefix}tourl
-                                                                                          🔵 ${prefix}ebinary
-                                                                                          🔵 ${prefix}dbinary
+*𝗖𝗢𝗡𝗩𝗘𝗥𝗧 𝗠𝗘𝗡𝗨*
+
+🔵 ${prefix}toimage
+🔵 ${prefix}removebg
+🔵 ${prefix}sticker
+🔵 ${prefix}emojimix
+🔵 ${prefix}tovideo
+🔵 ${prefix}togif
+🔵 ${prefix}tourl
+🔵 ${prefix}ebinary
+🔵 ${prefix}dbinary
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -3037,39 +3030,39 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'ranimemenu': {
                                                                                             anu = `
-                                                                                            *RANDOM ANIME*
-                                                                                            
-                                                                                          🐦 ${prefix}loli
-                                                                                          🐦 ${prefix}neko
-                                                                                          🐦 ${prefix}waifu
-                                                                                          🐦 ${prefix}shinobu
-                                                                                          🐦 ${prefix}megumin
-                                                                                          🐦 ${prefix}bully
-                                                                                          🐦 ${prefix}cuddle
-                                                                                          🐦 ${prefix}cry
-                                                                                          🐦 ${prefix}hug
-                                                                                          🐦 ${prefix}awoo
-                                                                                          🐦 ${prefix}kiss
-                                                                                          🐦 ${prefix}lick
-                                                                                          🐦 ${prefix}pat
-                                                                                          🐦 ${prefix}smug
-                                                                                          🐦 ${prefix}bonk
-                                                                                          🐦 ${prefix}yeet
-                                                                                          🐦 ${prefix}blush
-                                                                                          🐦 ${prefix}smile
-                                                                                          🐦 ${prefix}wave
-                                                                                          🐦 ${prefix}highfive
-                                                                                          🐦 ${prefix}handhold
-                                                                                          🐦 ${prefix}nom
-                                                                                          🐦 ${prefix}bite
-                                                                                          🐦 ${prefix}glomp
-                                                                                          🐦 ${prefix}slap
-                                                                                          🐦 ${prefix}kill
-                                                                                          🐦 ${prefix}happy
-                                                                                          🐦 ${prefix}wink
-                                                                                          🐦 ${prefix}poke
-                                                                                          🐦 ${prefix}dance
-                                                                                          🐦 ${prefix}cringe
+*RANDOM ANIME*
+
+🐦 ${prefix}loli
+🐦 ${prefix}neko
+🐦 ${prefix}waifu
+🐦 ${prefix}shinobu
+🐦 ${prefix}megumin
+🐦 ${prefix}bully
+🐦 ${prefix}cuddle
+🐦 ${prefix}cry
+🐦 ${prefix}hug
+🐦 ${prefix}awoo
+🐦 ${prefix}kiss
+🐦 ${prefix}lick
+🐦 ${prefix}pat
+🐦 ${prefix}smug
+🐦 ${prefix}bonk
+🐦 ${prefix}yeet
+🐦 ${prefix}blush
+🐦 ${prefix}smile
+🐦 ${prefix}wave
+🐦 ${prefix}highfive
+🐦 ${prefix}handhold
+🐦 ${prefix}nom
+🐦 ${prefix}bite
+🐦 ${prefix}glomp
+🐦 ${prefix}slap
+🐦 ${prefix}kill
+🐦 ${prefix}happy
+🐦 ${prefix}wink
+🐦 ${prefix}poke
+🐦 ${prefix}dance
+🐦 ${prefix}cringe
                                                                                         `
                                                                                         const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -3097,20 +3090,19 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'nocategorymenu': {
                                                                                             anu = `
-                                                                                            *𝗠𝗜𝗦𝗖 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔵 ${prefix}speedtest
-                                                                                          🔵 ${prefix}ping
-                                                                                          🔵 ${prefix}owner
-                                                                                          🔵 ${prefix}donate
-                                                                                          🔵 ${prefix}menu
-                                                                                          🔵 ${prefix}delete
-                                                                                          🔵 ${prefix}chatinfo
-                                                                                          🔵 ${prefix}quoted
-                                                                                          🔵 ${prefix}listpc
-                                                                                          🔵 ${prefix}listgc
-                                                                                          🔵 ${prefix}listonline
-                                                                                          🔵 ${prefix}report
+*𝗠𝗜𝗦𝗖 𝗠𝗘𝗡𝗨*
+🔵 ${prefix}speedtest
+🔵 ${prefix}ping
+🔵 ${prefix}owner
+🔵 ${prefix}donate
+🔵 ${prefix}menu
+🔵 ${prefix}delete
+🔵 ${prefix}chatinfo
+🔵 ${prefix}quoted
+🔵 ${prefix}listpc
+🔵 ${prefix}listgc
+🔵 ${prefix}listonline
+🔵 ${prefix}report
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -3138,16 +3130,15 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'databasemenu': {
                                                                                             anu = `
-                                                                                            *𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔵 ${prefix}setcmd
-                                                                                          🔵 ${prefix}listcmd
-                                                                                          🔵 ${prefix}delcmd
-                                                                                          🔵 ${prefix}lockcmd
-                                                                                          🔵 ${prefix}addmsg
-                                                                                          🔵 ${prefix}listmsg
-                                                                                          🔵 ${prefix}getmsg
-                                                                                          🔵 ${prefix}delmsg
+*𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗠𝗘𝗡𝗨*
+🔵 ${prefix}setcmd
+🔵 ${prefix}listcmd
+🔵 ${prefix}delcmd
+🔵 ${prefix}lockcmd
+🔵 ${prefix}addmsg
+🔵 ${prefix}listmsg
+🔵 ${prefix}getmsg
+🔵 ${prefix}delmsg
                                                                                           `
                                                                                           const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -3175,11 +3166,10 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'anonymouschatmenu': {
                                                                                             anu = `
-                                                                                            *𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗠𝗘𝗡𝗨*
-                                                                                            
-                                                                                          🔵 ${prefix}start
-                                                                                          🔵 ${prefix}next
-                                                                                          🔵 ${prefix}stop
+*𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗠𝗘𝗡𝗨*
+🔵 ${prefix}start
+🔵 ${prefix}next
+🔵 ${prefix}stop
                                                                                             `
                                                                                               const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -3207,11 +3197,10 @@ hydratedButtons: [{
                                                                                         break
                                                                                         case 'sistemmenu': {
                                                                                             anu = `
-                                                                                            *𝗦𝗬𝗦𝗧𝗘𝗠 𝗠𝗘𝗡𝗨*
-                                                                                            
-                                                                                          🔵 ${prefix}antilink
-                                                                                          🔵 ${prefix}mute
-                                                                                          🔵 ${prefix}antiwame
+*𝗦𝗬𝗦𝗧𝗘𝗠 𝗠𝗘𝗡𝗨* 
+🔵 ${prefix}antilink
+🔵 ${prefix}mute
+🔵 ${prefix}antiwame
                                                                                         `
                                                                                         const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
@@ -3239,16 +3228,15 @@ hydratedButtons: [{
                                                                                         break
                                                                                           case 'ownermenu': {
                                                                                               anu = `
-                                                                                          *𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨*
-                                                                                          
-                                                                                          🔵 ${prefix}chat
-                                                                                          🔵 ${prefix}join
-                                                                                          🔵 ${prefix}leave
-                                                                                          🔵 ${prefix}setbotpp
-                                                                                          🔵 ${prefix}block
-                                                                                          🔵 ${prefix}unblock
-                                                                                          🔵 ${prefix}bcgroup
-                                                                                          🔵 ${prefix}bcall
+*𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨*
+🔵 ${prefix}chat
+🔵 ${prefix}join
+🔵 ${prefix}leave
+🔵 ${prefix}setbotpp
+🔵 ${prefix}block
+🔵 ${prefix}unblock
+🔵 ${prefix}bcgroup
+🔵 ${prefix}bcall
                                                                                           `
                                                                                             const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                                                                             templateMessage: {
