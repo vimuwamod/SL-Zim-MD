@@ -1,7 +1,7 @@
 {
   "name": "Zim Bot Inc",
   "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/zim-bot/tuna-bot",
+  "repository": "https://github.com/MRnimaofc2/tuna-bot",
   "logo": "https://i.imgur.com/rANDwCP.jpeg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
