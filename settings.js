@@ -16,19 +16,19 @@ global.APIKeys = {
 }
 
 //other
-global.owner = ['27634090203'] 
-global.pemilik = ['27634090203'] //pemilik nomor
-global.premium = ['27634090203'] //premium number
-global.pengguna = 'Drips' //pengguna
-global.botnma = 'ZIM BOT INC' //botnama,botname
-global.ownernma = 'Drips' //ownernama,ownername
-global.packname = 'Drips' // packname
-global.author = 'By Drips Memes' //authorname
+global.owner = ['94715166712'] 
+global.pemilik = ['94715166712'] //pemilik nomor
+global.premium = ['94715166712'] //premium number
+global.pengguna = 'Nima' //pengguna
+global.botnma = 'GROUP BOT INC' //botnama,botname
+global.ownernma = 'nima' //ownernama,ownername
+global.packname = 'Nima offical group \nSticker pack 🥷' // packname
+global.author = 'Mr. nima' //authorname
 global.sessionName = 'session'
 global.prefa = ['#','!','/',''] 
 global.sp = '🔵'
 global.mess = {
-    success: 'Takaenda Done!',
+    success: '✅ Done!',
     admin: 'you must be admin to use this cmd!',
     botAdmin: 'zim bot must be admin neh!',
     owner: 'This cmd is for zim bot owner only',
