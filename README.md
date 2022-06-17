@@ -8,7 +8,7 @@
 
 > A Fully PRECIOUS COOL BOT BY DRIPS MEMES <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MRnimaofc2/Tutug)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DarkCreater2004/Tutug)
 
 ## BUILD PACKS
 
