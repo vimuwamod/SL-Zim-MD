@@ -1,4 +1,12 @@
+##### Qr කෝඩ් එක ස්කෑන් කරලා එන file එක ඔයා fork කරගතත්තු එකට upload කරන්න
+##### රීට පස්සේ ඔයාගේ link එක අරන් deploy link එක හදාගන්න
 
+       https://heroku.com/deploy?template= උබේ github link එක දාපන්      
+
++ උඩ තියෙන deploy link එකට උබේ deploy link එක දාලාගන්න 🧑‍💻
+
+#
+#
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DarkCreater2004/Tutug)
 
 ## BUILD PACKS
@@ -22,7 +30,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 
 ``` 
-git clone https://github.com/zim-bot/tuna-bot
+git clone https://github.com/MR-NIMA-X/SL-Zim-MD
  
 cd tuna-bot
  
@@ -37,11 +45,11 @@ echo scan the qr code and enjoy bot
 
 ## JOIN MY WHATSAPP GROUP
 
-# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EFsb8RCXV4jLEFk4eAcA1A)
+# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GLTYbadPDlFAOjz1Co3DoU)
 
 ## MY PERSONAL CHAT
 
-# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/27634090203)
+# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/94715166712?text=From_Sl_zim_Git)
 # THANKS TO [DikaArdnt ](https://github.com/DikaArdnt)
 
 # > THANKS FOR CHOOSING ZIM BOT WE APPRECIATE YOU FOR YOUR SUPPORT
