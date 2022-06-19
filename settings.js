@@ -1,6 +1,7 @@
 //                     zimbot.inc.pressents 
 //                     2022 production
 //                     Thanks to dikArdnt
+// 👋 SOME BUG ARE FIXING AND ADD NEW PARTS by MR NIMA 
                                                                                         //drips
 
 
@@ -56,7 +57,7 @@ global.limitawal = {
      }    
 
 global.thumb = fs.readFileSync('./image/drips.jpg')
-
+global.imgalive = fs.readFileSync('./image/drips.jpg')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
