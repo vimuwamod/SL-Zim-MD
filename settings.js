@@ -27,6 +27,7 @@ global.author = 'ɴɪᴍᴀ ᴏғᴄ ɢʀᴏᴜᴘ ʙᴏᴛ' //authorname
 global.sessionName = 'session'
 global.prefa = ['#','!','/',''] 
 global.sp = '🔵'
+global.alive`Hello i am alive now`
 global.mess = {
     success: '✅ Done!',
     admin: 'you must be admin to use this cmd!',
