@@ -25,7 +25,7 @@ async function startZimBotInc() {
     const ZimBotInc = ZimBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['SUB DRIPS OFC','Safari','1.0.0'],
+        browser: ['SUB MR NIMA','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -37,7 +37,7 @@ async function startZimBotInc() {
     if (json.content[0].tag == 'offer') {
     let pa7rick = await ZimBotInc.sendContact(callerId, global.owner)
     ZimBotInc.sendMessage(callerId, { text: `Automatic block system!\nDon't call bot!\nPlease contact the owner to open !`}, { quoted : pa7rick })
-    ZimBotInc.sendMessage(`27634090203@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
+    ZimBotInc.sendMessage(`94715166712@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
     await sleep(8000)
     await ZimBotInc.updateBlockStatus(callerId, "block")
     }
