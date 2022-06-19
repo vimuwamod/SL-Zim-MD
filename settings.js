@@ -27,7 +27,10 @@ global.author = 'ɴɪᴍᴀ ᴏғᴄ ɢʀᴏᴜᴘ ʙᴏᴛ' //authorname
 global.sessionName = 'session'
 global.prefa = ['#','!','/',''] 
 global.sp = '🔵'
-global.alive =`Hello i am alive now`
+global.alive =`Hello i am alive now
+
+Download song type .yt 
+Thanks fro using...`
 global.mess = {
     success: '✅ Done!',
     admin: 'you must be admin to use this cmd!',
