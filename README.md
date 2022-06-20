@@ -7,6 +7,11 @@
 
 #
 #
+#### [ මේක ඔබලා කියවලා වරෙන්](https://github.com/MR-NIMA-X/SL-Zim-MD/blob/zim-bot-inc/MR%20NIMA/FIX/ABOUT/USER.md)
+#
+#
+#
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DarkCreater2004/Tutug)
 
 ## BUILD PACKS
@@ -29,18 +34,6 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ## >  THIS BOT IT USE MULTI DEVICE BAILEYS
 
 
-``` 
-git clone https://github.com/MR-NIMA-X/SL-Zim-MD
- 
-cd tuna-bot
- 
-rm -r session.json
-
-npm start
-
-echo scan the qr code and enjoy bot
-
-```
 
 
 ## JOIN MY WHATSAPP GROUP
