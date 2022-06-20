@@ -7,11 +7,13 @@
 
 #
 #
+# 
 #### [ මේක ඔබලා කියවලා වරෙන්](https://github.com/MR-NIMA-X/SL-Zim-MD/blob/zim-bot-inc/MR%20NIMA/FIX/ABOUT/USER.md)
 #
-#
-#
+### Sacn Qr code fro md
+[![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@SilvernimaBotma/SL-ZIM-MD-SCANER?outputonly=1&lite=1#index.js)
 
+### Deploy your bot
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DarkCreater2004/Tutug)
 
 ## BUILD PACKS
