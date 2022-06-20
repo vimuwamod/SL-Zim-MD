@@ -32,3 +32,7 @@
 #### ⬆️ මේ ලින්ක් එකට ඔයාගේ github ලින්ක් එක දාන්න 
 
 #### ✅ දාලා ඒ ලින්ක් එකෙන් deploy  කරන්න
+#  
+#  
+#
+## [BACK TO DEPLOY](https://github.com/MR-NIMA-X/SL-Zim-MD)
