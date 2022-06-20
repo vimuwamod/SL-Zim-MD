@@ -35,4 +35,4 @@
 #  
 #  
 #
-## [BACK TO DEPLOY](https://github.com/MR-NIMA-X/SL-Zim-MD)
+#### [BACK TO DEPLOY][මේකෙන් බැක් වෙලා ආපව් ඔයාගේ repo එකට යන්න]
