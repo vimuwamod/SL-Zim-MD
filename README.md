@@ -50,6 +50,6 @@ echo scan the qr code and enjoy bot
 ## MY PERSONAL CHAT
 
 # [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/94715166712?text=From_Sl_zim_Git)
-# THANKS TO [DikaArdnt ](https://github.com/DikaArdnt)
+
 
 # > THANKS FOR CHOOSING ZIM BOT WE APPRECIATE YOU FOR YOUR SUPPORT
