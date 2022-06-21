@@ -16,7 +16,7 @@
 #### ❷ ඊට පස්සේ මේ profile එක fork කරගන්න
  + Dextop mod දාන්න 
 + දකුනු පැත්තේ උඩට වෙන්න ඇති fork button  එක ඒක ඔබන්න
-### [ OR CLICK THIS || මේක ඔබන්න](https://github.com/MR-NIMA-X/SL-Zim-MD/fork)
+### [ OR CLICK THIS || මේක ඔබන්න](https://github.com/MR-NIMA-X/SL-Zim-MD/fork) 
 <div align="center">
   <img src="https://github.com/DarkCreater2004/Tutug/raw/zim-bot-inc/storage/Screenshot_20220620-144541_Chrome.jpg" 
 
