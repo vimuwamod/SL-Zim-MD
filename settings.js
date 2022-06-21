@@ -39,10 +39,10 @@ global.welcome = `${tagandgrp}
 ✾ Some bugs fixing
 😼♥️
 `
-// වෙල්කම් එක යවන්න ඔනි නම් add කියලා දාන්න
-global.sendwelcome = `add`
+// වෙල්කම් එක යවන්න ඔනි නම් add කියලා දාන්න 
+global.sendwelcome = `xxxadd`
 // Good bye එක ඔනි නම් remove කියලා දාන්න
-global.sendgoodbye = `remove`
+global.sendgoodbye = `xxxremove`
 
 global.mess = {
     success: '✅ Done!',
