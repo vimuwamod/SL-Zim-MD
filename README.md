@@ -34,6 +34,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ## >  FOLLOW STEPS BELOW FOR INSTALLATION
 
 ## >  THIS BOT IT USE MULTI DEVICE BAILEYS
+# MAKING... 
 
 
 
