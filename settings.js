@@ -33,16 +33,16 @@ global.alive =`Hello i am alive now
 
 Download song type .yt 
 Thanks fro using...`
-// Welcome massage if you want add user tag and add group description Welcome massage use ${tagandgrp} this 
-global.welcome = `${tagandgrp}
+// Welcome massage  
+global.welcome = `
 🌀 Thanks Fro using sl zim bot
 ✾ Some bugs fixing
 😼♥️
 `
 // වෙල්කම් එක යවන්න ඔනි නම් add කියලා දාන්න 
-global.sendwelcome = `xxxadd`
+global.sendwelcome = `add`
 // Good bye එක ඔනි නම් remove කියලා දාන්න
-global.sendgoodbye = `xxxremove`
+global.sendgoodbye = `remove`
 
 global.mess = {
     success: '✅ Done!',
