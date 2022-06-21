@@ -58,6 +58,13 @@ async function startZimBotInc() {
             console.log(err)
         }
     })
+
+}
+
+//dokumen random
+let doku = [f1,f2,f3,f4,f5,f6]
+let feler = pickRandom(doku)
+
 ZimBotInc.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
         try {
