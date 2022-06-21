@@ -60,9 +60,6 @@ async function startZimBotInc() {
     })
 
 
-//dokumen random
-let doku = [f1,f2,f3,f4,f5,f6]
-let feler = pickRandom(doku)
 
 ZimBotInc.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
@@ -94,7 +91,7 @@ let buttons = [
 ]
 let buttonMessage = {
 document: fs.readFileSync('./lib/tes.xlsx'),
-mimetype: feler,
+mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 jpegThumbnail:buffer,
 mentions: [num],
 fileName: `Welcome To ${metadata.subject}`,
@@ -122,7 +119,7 @@ let buttons = [
 ]
 let buttonMessage = {
 document: fs.readFileSync('./lib/tes.xlsx'),
-mimetype: feler,
+mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
 jpegThumbnail:buffer,
 mentions: [num],
 fileName: `He/She is gone bro ${metadata.subject}`,
