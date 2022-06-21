@@ -110,7 +110,7 @@ mediaUrl: link,
 }}
 }
 ZimBotInc.sendMessage(anu.id, buttonMessage, {quoted:fgclink})
-                } else if (anu.action == 'remove') {
+                } else if (anu.action == `${global.sendgoodbye}`) {
                     let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     he = `He/She is gone bro ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
                     let link = `https://youtu.be/cvj3054O5NU`
