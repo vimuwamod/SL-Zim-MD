@@ -39,6 +39,11 @@ global.welcome = `
 ✾ Some bugs fixing
 😼♥️
 `
+// වෙල්කම් එක යවන්න ඔනි නම් add කියලා දාන්න
+global.sendwelcome = `add`
+// Good bye එක ඔනි නම් remove කියලා දාන්න
+global.sendgoodbye = `remove`
+
 global.mess = {
     success: '✅ Done!',
     admin: 'you must be admin to use this cmd!',
